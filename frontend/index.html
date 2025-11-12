@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medicine Recommendation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Medicine Recommendation System</h1>
+
+    <label>Search Symptoms:</label>
+    <input type="text" id="search" placeholder="Type to filter symptoms...">
+
+    <div id="symptom-list" class="scrollbox"></div>
+
+    <label>Enter Age:</label>
+    <input type="number" id="age" min="0">
+
+    <label>Select Gender:</label>
+    <div class="radio-group">
+      <label><input type="radio" name="gender" value="male" checked> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+    </div>
+
+    <label>Duration (like 3 days or 1 week):</label>
+    <input type="text" id="duration">
+
+    <div class="button-group">
+      <button id="recommend-btn">Get Recommendation</button>
+      <button id="clear-btn">Clear</button>
+    </div>
+
+    <h2>Recommended Medicines:</h2>
+    <textarea id="output" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
