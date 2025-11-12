@@ -1,0 +1,7 @@
+{
+  "name": "medicine-app",
+  "version": "1.0.0",
+  "dependencies": {
+    "papaparse": "^5.4.1"
+  }
+}
